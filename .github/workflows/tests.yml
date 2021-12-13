@@ -58,6 +58,10 @@ jobs:
         run: |
           while ! nc -z localhost 8002 </dev/null; do echo Waiting for PHP server to start...; sleep 1; done
 
+      - name: Setup tmate session
+        if: "${{ matrix.php == '7.1' }}"
+        uses: mxschmitt/action-tmate@v3
+
       - name: Run tests
         run: |
           export SYMFONY_DEPRECATIONS_HELPER="${{ matrix.symfony_deprecations_helper }}"
