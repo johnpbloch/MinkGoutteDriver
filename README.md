@@ -56,4 +56,4 @@ Maintainers
 -----------
 
 * Christophe Coevoet [stof](https://github.com/stof)
-* Other [awesome developers](https://github.com/minkphp/MinkGoutteDriver/graphs/contributors)
+* Other [awesome developers](https://github.com/minkphp/MinkGoutteDriver/graphs/contributors).
